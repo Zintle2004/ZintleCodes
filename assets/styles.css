@@ -1,0 +1,36 @@
+:root{
+  --navy: #071033;       /* primary navy */
+  --navy-2: #0b2b4a;     /* hover / accent navy */
+  --bg: #000000;         /* page background black */
+  --text: #E6F0FA;       /* soft white text */
+}
+
+/* Fonts loaded in index.html: Poppins (headings) and Open Sans (body) */
+.brand-heading { font-family: 'Poppins', sans-serif; }
+body { font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--text); }
+
+/* Navbar / colors */
+.bg-dark-plain { background: transparent !important; }
+.navbar .nav-link { color: rgba(230,240,250,0.85) !important; }
+.navbar .nav-link:hover { color: var(--navy-2) !important; }
+.btn-primary { background: var(--navy); border-color: var(--navy); }
+.btn-primary:hover { background: var(--navy-2); border-color: var(--navy-2); }
+.text-navy { color: var(--navy); }
+
+/* Cards and surfaces */
+.bg-dark-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); color: var(--text); }
+.card .card-footer a { color: var(--navy); text-decoration: none; }
+
+/* Avatar initials */
+.avatar-initials {
+  width: 144px; height: 144px; border-radius: 50%; background: linear-gradient(180deg,var(--navy), var(--navy-2));
+  display: inline-flex; align-items: center; justify-content: center; font-size: 42px; color: #fff; font-weight:700;
+}
+
+/* Utility tweaks */
+.lead { color: rgba(230,240,250,0.9); }
+.text-muted { color: rgba(230,240,250,0.7) !important; }
+
+@media (max-width: 767px) {
+  .avatar-initials { width: 120px; height: 120px; font-size: 36px; }
+}
